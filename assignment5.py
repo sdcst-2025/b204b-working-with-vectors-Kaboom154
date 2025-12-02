@@ -25,6 +25,10 @@ repeat the process, but with y to solve for x
 
 """
 
-e1 = np.array( [] ) 
-e2 = np.array( [] )
+e1 = np.array( [2,3,13] ) 
+e2 = np.array( [3,-4,-6] )
 
+e1_1 = e1 / e1[0]
+e2_1 = e2 / e2[0]
+
+e2_2 = e2_1 - e1_1

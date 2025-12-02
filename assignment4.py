@@ -1,7 +1,8 @@
 import numpy as np
 
 def rrow(vector,index):
-    pass
+    return vector / vector[index]
+
     # your code goes here
     # divide your vector by the vector element at the position given by the scalar to find the reduced row
 
@@ -21,4 +22,3 @@ assert rrow(l1,1)[2] == 0.625
 assert rrow(l1,2)[0] == -0.6
 assert rrow(l1,2)[1] == 1.6
 assert rrow(l1,2)[2] == 1
-
