@@ -3,3 +3,8 @@ l2 = [7,8,9]
 
 sum = l1 + l2
 print(sum)
+#print(l1 * l2)
+#print(l1 - l2)
+#print(l1 / l2)
+#print(l1 % l2)
+#print(l1 ** l2)
