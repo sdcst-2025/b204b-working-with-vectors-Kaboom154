@@ -25,10 +25,17 @@ repeat the process, but with y to solve for x
 
 """
 
-e1 = np.array( [2,3,13] ) 
-e2 = np.array( [3,-4,-6] )
+e1 = np.array( [4,8,16] ) 
+e2 = np.array( [3,2,8] )
 
-e1_1 = e1 / e1[0]
-e2_1 = e2 / e2[0]
+e1 = e1 / e1[0]
+e2 = e2 / e2[0]
 
-e2_2 = e2_1 - e1_1
+e2 -= e1
+e2 /= e2[1]
+e1 -= (e2 * e1[1])
+
+print(f'''
+    {e1}
+    {e2}
+      ''')
